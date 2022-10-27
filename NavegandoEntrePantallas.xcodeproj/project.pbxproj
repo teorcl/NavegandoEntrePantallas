@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		AB9B8E51290AEF2300DC29A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9B8E50290AEF2300DC29A7 /* AppDelegate.swift */; };
 		AB9B8E53290AEF2300DC29A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9B8E52290AEF2300DC29A7 /* SceneDelegate.swift */; };
-		AB9B8E55290AEF2300DC29A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9B8E54290AEF2300DC29A7 /* ViewController.swift */; };
 		AB9B8E58290AEF2300DC29A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9B8E56290AEF2300DC29A7 /* Main.storyboard */; };
 		AB9B8E5A290AEF2800DC29A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9B8E59290AEF2800DC29A7 /* Assets.xcassets */; };
 		AB9B8E5D290AEF2800DC29A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9B8E5B290AEF2800DC29A7 /* LaunchScreen.storyboard */; };
+		AB9B8E65290AF56000DC29A7 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9B8E64290AF56000DC29A7 /* RedViewController.swift */; };
+		AB9B8E67290AF6F600DC29A7 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9B8E66290AF6F600DC29A7 /* BlueViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB9B8E4D290AEF2300DC29A7 /* NavegandoEntrePantallas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavegandoEntrePantallas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB9B8E50290AEF2300DC29A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB9B8E52290AEF2300DC29A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB9B8E54290AEF2300DC29A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB9B8E57290AEF2300DC29A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB9B8E59290AEF2800DC29A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB9B8E5C290AEF2800DC29A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB9B8E5E290AEF2800DC29A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB9B8E64290AF56000DC29A7 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		AB9B8E66290AF6F600DC29A7 /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				AB9B8E50290AEF2300DC29A7 /* AppDelegate.swift */,
 				AB9B8E52290AEF2300DC29A7 /* SceneDelegate.swift */,
-				AB9B8E54290AEF2300DC29A7 /* ViewController.swift */,
 				AB9B8E56290AEF2300DC29A7 /* Main.storyboard */,
 				AB9B8E59290AEF2800DC29A7 /* Assets.xcassets */,
 				AB9B8E5B290AEF2800DC29A7 /* LaunchScreen.storyboard */,
 				AB9B8E5E290AEF2800DC29A7 /* Info.plist */,
+				AB9B8E64290AF56000DC29A7 /* RedViewController.swift */,
+				AB9B8E66290AF6F600DC29A7 /* BlueViewController.swift */,
 			);
 			path = NavegandoEntrePantallas;
 			sourceTree = "<group>";
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB9B8E55290AEF2300DC29A7 /* ViewController.swift in Sources */,
 				AB9B8E51290AEF2300DC29A7 /* AppDelegate.swift in Sources */,
+				AB9B8E65290AF56000DC29A7 /* RedViewController.swift in Sources */,
+				AB9B8E67290AF6F600DC29A7 /* BlueViewController.swift in Sources */,
 				AB9B8E53290AEF2300DC29A7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,8 +297,6 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +304,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = calle.teodoro.NavegandoEntrePantallas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,8 +326,6 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +333,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = calle.teodoro.NavegandoEntrePantallas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
