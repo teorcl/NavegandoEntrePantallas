@@ -23,7 +23,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Navegar"/>
                                 <connections>
-                                    <action selector="onNavigationButtonPressed" destination="HAl-aV-Y6c" eventType="touchUpInside" id="iVF-Kn-r7Q"/>
+                                    <segue destination="i0l-fq-f0x" kind="presentation" modalPresentationStyle="fullScreen" id="yJ4-Ku-auj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -31,9 +31,6 @@
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Rojo" id="Snn-G1-gxa"/>
-                    <connections>
-                        <segue destination="YQR-3v-dWD" kind="show" identifier="navegarHaciaAzul" id="KZa-Nd-ryq"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uX2-Ax-Uat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -49,11 +46,18 @@
                         <viewLayoutGuide key="safeArea" id="pE4-RZ-6H8"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Azul" id="umc-Q5-l6V"/>
+                    <navigationItem key="navigationItem" title="Azul" id="umc-Q5-l6V">
+                        <barButtonItem key="rightBarButtonItem" title="Cerrar" id="RuH-Ql-RXG">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onCloseButtonTapped:" destination="YQR-3v-dWD" id="5YI-ML-uKX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G13-JC-aw9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1183" y="-66"/>
+            <point key="canvasLocation" x="2400" y="-66.113744075829388"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mK4-bK-mor">
@@ -73,6 +77,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c4D-FK-a1Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-218" y="-66"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NNL-yk-xMz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i0l-fq-f0x" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="34S-84-hN1">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YQR-3v-dWD" kind="relationship" relationship="rootViewController" id="991-pT-CKG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I71-x3-790" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1470.7692307692307" y="-66.113744075829388"/>
         </scene>
     </scenes>
     <resources>

@@ -9,4 +9,7 @@ import UIKit
 
 class BlueViewController: UIViewController{
     
+    @IBAction func onCloseButtonTapped(_ sender: UIBarButtonItem) {
+        dismiss(animated: true)
+    }
 }
